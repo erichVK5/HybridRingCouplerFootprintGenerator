@@ -16,7 +16,7 @@ You can then compile the java source code:
 
 Tips:
 
-The utility adds input and output pads in the final four lines of the footprint file. Users will need to specify their dimensions to achieve the required stripline impedance relative to the power divider arms.
+The utility adds input and output pads in the final four lines of the footprint file. Users will need to specify their dimensions to achieve the required stripline impedance relative to the hybrid ring.
 
 Users may wish to experiment with segment lengths to achieve a suitably rounded contour, and dimensions should be verified before sending off designs for fabrication.
 
@@ -27,21 +27,21 @@ Usage:
 
 	java HybridRingCouplerFootprintGenerator -option value
 
-		-k		export a kicad module, default is geda .fp file
+		-k			export a kicad module, default is geda .fp file
 
 		-f double	frequency of operation in Megahertz
 
 		-w long		track width in microns
 
 		-p long		input/output port track width in microns
-				default: port track width = track width
+					default: port track width = track width
 
 		-v double	velocity factor <= 1.0
-				default: 1.0
+					default: 1.0
 
 		-l long		length of segment in microns used to approximate a circle
 
-		-h		prints this
+		-h			prints this
 
 Example usage:
 
